@@ -7,7 +7,7 @@ import api from '@/lib/api';
 import { Task, TaskStatus } from '@/types';
 
 export default function TasksPage() {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
     const router = useRouter();
     const [tasks, setTasks] = useState<Task[]>([]);
     const [filter, setFilter] = useState<'all' | TaskStatus>('all');
@@ -74,6 +74,16 @@ export default function TasksPage() {
             >
                 + Nueva Tarea
             </button>
+            <div className="flex justify-between items-center mb-4">
+                <button
+                    onClick={() => logout()}
+                    className="text-sm bg-red-500 text-white px-3 py-1 rounded"
+                >
+                    Cerrar sesión
+                </button>
+            </div>
+
         </main>
+
     );
 }

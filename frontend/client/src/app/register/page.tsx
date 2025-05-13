@@ -55,6 +55,13 @@ export default function RegisterPage() {
                 >
                     {isSubmitting ? 'Creando…' : 'Registrar'}
                 </button>
+                <p className="text-sm mt-4">
+                    ¿Ya tienes cuenta?{' '}
+                    <a href="/login" className="text-blue-600 underline">
+                        Inicia sesión aquí
+                    </a>
+                </p>
+
             </form>
         </main>
     );

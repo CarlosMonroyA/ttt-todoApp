@@ -55,6 +55,12 @@ export default function LoginPage() {
                 >
                     {isSubmitting ? 'Ingresando...' : 'Ingresar'}
                 </button>
+                <p className="text-sm mt-4">
+                    ¿No tienes cuenta?{' '}
+                    <a href="/register" className="text-blue-600 underline">
+                        Regístrate aquí
+                    </a>
+                </p>
             </form>
         </main>
     );
