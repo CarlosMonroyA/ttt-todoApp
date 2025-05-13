@@ -35,7 +35,7 @@ npx prisma generate
 npm run start:dev        # http://localhost:4000/api (Swagger UI)
 ```
 
-### 4. Frontend (Next.js)
+### 4. Frontend (Next.js) - En una terminal nueva
 
 ```bash
 cd ../../frontend/client
