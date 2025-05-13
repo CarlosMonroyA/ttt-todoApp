@@ -31,6 +31,7 @@ Levanta un contenedor PostgreSQL en el puerto **5434**.
 cd backend/server
 cp .env.example .env    # Variables: DATABASE_URL, JWT_SECRET
 npm install
+npx prisma generate
 npm run start:dev        # http://localhost:4000/api (Swagger UI)
 ```
 
